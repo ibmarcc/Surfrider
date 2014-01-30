@@ -1,0 +1,334 @@
+/*RESET STYLES*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.backgroundCover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.linkTransition {
+  -webkit-transition: .2s all ease;
+  -moz-transition: .2s all ease;
+  transition: .2s all ease;
+}
+.roundedButton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.clearfix {
+  display: block;
+}
+.clearfix:after {
+  visibility: hidden;
+  height: 0;
+  display: block;
+  content: "";
+  clear: both;
+}
+body {
+  font-family: 'pill gothic 300mg';
+  text-transform: uppercase;
+  color: #545454;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: .2s all ease;
+  -moz-transition: .2s all ease;
+  transition: .2s all ease;
+}
+#main-container {
+  margin: 0 auto;
+  height: 50em;
+}
+#header-container,
+#hero-inner,
+#modules-container,
+#footer-container {
+  max-width: 100em;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  background: #2c8db1;
+  padding: 0 25px 0 0;
+}
+img#logo {
+  display: block;
+  width: 150px;
+  float: left;
+}
+nav {
+  -webkit-transform: translateY(2.4em);
+  float: right;
+}
+nav a {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 0.9em;
+  letter-spacing: 2px;
+}
+nav a:hover {
+  color: #dddddd;
+}
+nav ul li {
+  display: block;
+  float: left;
+  margin: 0 5px;
+  padding: 15px 20px;
+}
+nav ul li:first-of-type {
+  margin: 0 5px 0 0;
+}
+nav ul li:last-of-type {
+  margin: 0 0 0 25px;
+  background: #045b7c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  -webkit-transition: .2s all ease;
+  -moz-transition: .2s all ease;
+  transition: .2s all ease;
+}
+nav ul li:last-of-type:hover {
+  background: #242424;
+}
+nav ul li:last-of-type:hover a {
+  color: #ffffff !important;
+}
+#hero {
+  background: url("/Users/marc/Documents/Sample Website/images/duckdive.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 40em 0 0em 0;
+  position: relative;
+}
+#hero-container {
+  background: rgba(6, 109, 148, 0.7);
+  padding: 60px 0px 73px 0;
+}
+#hero-inner {
+  position: relative;
+  color: #ffffff;
+}
+#hero-inner h1 {
+  font-size: 3em;
+}
+#hero-inner p {
+  margin: 0.7em 0 0 0;
+  text-transform: none;
+  width: 60%;
+  float: left;
+}
+#hero-inner a {
+  display: block;
+  float: left;
+  -webkit-transform: translateY(-1.1em);
+  -moz-transform: translateY(-1.1em);
+  -transform: translate(-1.1em);
+  background: #242424;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 18px 45px 15px 45px;
+  margin: 0 0 0 0em;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+#hero-inner a:hover {
+  background: #343434;
+}
+#modules {
+  margin: 0em;
+}
+div.module {
+  float: left;
+  width: 30%;
+  padding: 90px 0px;
+  height: 15em;
+}
+div.module:nth-of-type(2) {
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  margin: 0%;
+  padding: 90px 30px;
+}
+div.module:nth-of-type(3) {
+  padding: 90px 30px;
+}
+.module h2 {
+  font-size: 1.4em;
+  margin: 0 0 2.6em 0;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.module h5 {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin: 0 0 0em 0;
+}
+.module h6 {
+  font-weight: 100;
+  letter-spacing: 5px;
+  color: #aaa;
+  margin: 0 0 0em 0;
+}
+.module p {
+  margin: 0.5em 0 0 0;
+  text-transform: none;
+  line-height: 1.4em;
+}
+.module a {
+  color: #33a9ad;
+  display: inline-block;
+}
+.module:nth-of-type(2) a {
+  margin: 0.5em 0 0 0;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+footer {
+  background: #343434;
+  padding: 5em 0;
+}
+.footer-module {
+  float: left;
+  width: 20.37%;
+  margin: 0 3% 0 3%;
+}
+.footer-module:first-of-type {
+  margin: 0 3% 0 0;
+}
+.footer-module:last-of-type {
+  margin: 0 0 0 3%;
+}
+.footer-module h3 {
+  color: #747474;
+  letter-spacing: 3px;
+}
