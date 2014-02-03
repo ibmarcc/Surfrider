@@ -16,6 +16,7 @@
 @gray: #DDDDDD;
 @black: #242424;
 @white: #FFFFFF;
+@teal: #33a9ad;
 
 //TRANSITIONS//
 
@@ -40,6 +41,7 @@
 	-moz-transform: translateY(@translate);
 	-transform: translate(@translate);
 }
+
 
 .clearfix {
 	display: block;
@@ -66,7 +68,6 @@ a {
 
 #main-container {
 	margin: 0 auto;
-	height: 50em;
 }
 
 #header-container, #hero-inner, #modules-container, #footer-container {
@@ -117,9 +118,11 @@ nav {
 					.roundedButton;
 					padding: 15px 25px;
 					.linkTransition;
+
 					&:hover {
 						background: @black;
 					}
+
 					&:hover a {
 						color: @white !important;
 					}
@@ -132,7 +135,7 @@ nav {
 
 
 #hero {
-	background: url("/Users/marc/Documents/Sample Website/images/duckdive.jpg") center center no-repeat;
+	background: url("/Users/marc/Documents/Sample-Website/images/duckdive.jpg") center center no-repeat;
 	.backgroundCover;
 	padding: 40em 0 0em 0;
 	position:  relative;
@@ -168,6 +171,7 @@ nav {
 			margin: 0 0 0 0em;
 			letter-spacing: 3px;
 			color: @white;
+
 			&:hover {
 				background: #343434;
 			}
@@ -183,84 +187,23 @@ div.module {
 	width: 30%;
 	padding: 90px 0px;
 	height: 15em;
+
+		&:nth-of-type(2) {
+			border-left: 1px solid #DDD;
+			border-right: 1px solid #DDD;
+			margin: 0%;
+			padding: 90px 30px;
+		}
+
+		&:nth-of-type(3) {
+			padding: 90px 30px;
+		}
+
+		h2 {
+			font-size: 1.5em;
+
+		}
 }
-
-div.module:nth-of-type(2) {
-	border-left: 1px solid #DDD;
-	border-right: 1px solid #DDD;
-	margin: 0%;
-	padding: 90px 30px;
-	
-}
-
-div.module:nth-of-type(3) {
-	padding: 90px 30px;
-}
-
-.module h2 {
-	font-size: 1.4em;
-	margin: 0 0 2.6em 0;
-	letter-spacing:  4px;
-	font-weight: 100;
-}
-
-.module h5 {
-	text-transform:  none;
-	font-weight:  600;
-	font-size: 1.1em;
-	margin:  0 0 0em 0;
-}
-
-.module h6 {
-	font-weight:  100;
-	letter-spacing: 5px;
-	color: #aaa;
-	margin: 0 0 0em 0;
-}
-
-.module p {
-	margin: 0.5em 0 0 0;
-	text-transform:  none;
-	line-height: 1.4em;
-}
-
-.module a {
-	color: #33a9ad;
-	display: inline-block;
-}
-
-.module:nth-of-type(2) a {
-	margin: 0.5em 0 0 0;
-	text-transform:  none;
-	font-weight:  600;
-	font-size: 1.1em;
-}
-
-footer {
-	background: #343434;
-	padding: 5em 0;
-}
-
-.footer-module {
-	float: left;
-	width: 20.37%;
-	margin: 0 3% 0 3%;
-}
-
-.footer-module:first-of-type {
-	margin: 0 3% 0 0;
-}
-
-.footer-module:last-of-type {
-	margin: 0 0 0 3%;
-}
-
-.footer-module h3 {
-	color: #747474;
-	letter-spacing: 3px;
-}
-
-
 
 
 
